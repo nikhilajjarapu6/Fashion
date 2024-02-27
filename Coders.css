@@ -381,7 +381,7 @@ input::placeholder {
 }
 
 
-@media screen and (max-width:420px)  {
+@media screen and (max-width:410px)  {
     .navbar{
        position: absolute;
        left: 130px;
