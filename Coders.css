@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600..900&display=swap');
+
+
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-image: url(./pexels-anna-shvets-4483218.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+.aside-bar {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    /* overflow: hidden; */
+    height: 100%;
+    width: 0px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    transition: width 0.3s ease-in;
+    backdrop-filter: blur(10px);
+
+}
+
+/* .aside-bar:hover{
+    width: 250px;
+} */
+.aside-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.fa-bars {
+    position: relative;
+    margin: 10px;
+    font-size: 25px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hover {
+    width: 250px;
+}
+
+#hide {
+    position: absolute;
+    left: 220px;
+    font-size: 20px;
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+    cursor: pointer;
+    /* transition: width 0.5s ease; */
+}
+
+#hide:hover {
+    background-color: white;
+}
+
+.aside-items {
+    list-style: none;
+    padding: 0;
+    margin-right: 50px;
+
+}
+
+.aside-items li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.aside-items li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+
+}
+
+.aside-items li:hover {
+    position: relative;
+    left: 4px;
+
+}
+
+.aside-items li:hover::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    bottom: 0;
+    left: -10px;
+    height: 38px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border: 1px solid rgb(0, 0, 0); */
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.9s ease-in-out;
+
+
+}
+
+.aside-headers {
+    border-bottom: 1px solid black;
+    margin-left: -10px;
+    width: 140%;
+}
+
+.material-symbols-outlined {
+    margin-right: 20px;
+    /* Adjust as needed */
+    font-size: 30px;
+}
+
+
+.profile {
+    width: 60px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    border: 0px;
+    border-radius: 5px 0px 0px 5px;
+    height: 30px;
+}
+
+.search-bar span {
+    background: white;
+    font-size: 25px;
+    height: 32px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header img {
+    margin-top: 10px;
+}
+
+.header .profile-name {
+    margin: 0%;
+    font-size: 15px;
+}
+
+#bars-span {
+    display: none;
+    position: absolute;
+    top: 13px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.fa-bars:hover+#bars-span {
+    display: inline;
+}
+
+#hide-span {
+    display: none;
+    position: relative;
+    top: -10px;
+    left: 200px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#hide:hover+#hide-span {
+    display: inline;
+}
+
+.hover-span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    float: inline-end;
+    margin-right: 40px;
+
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+
+
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 20px;
+    padding: 5px 8px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(216, 216, 216, 0.233);
+    border-radius: 10px;
+    color: white;
+}
+
+.navbar ul li:hover {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(216, 216, 216, 0.233);
+    border-radius: 10px;
+    color: rgb(255, 123, 0);
+    box-shadow: 0px 0px 2px red;
+}
+
+.navbar ul li:focus {
+    box-shadow: 0px 0px 5px red;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search input {
+    border: 0px;
+    border-radius: 5px 0px 0px 5px;
+    height: 60px;
+    width: 600px;
+    background-color: rgba(255, 30, 0, 0.336);
+    border: 0%;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+.search span {
+    background: rgb(255, 240, 30);
+    font-size: 28px;
+    height: 62px;
+    width: 80px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 5px 5px 0px;
+    padding-right: 10px;
+
+}
+
+.fa-heart:hover,
+.fa-bag-shopping:hover {
+    color: rgb(255, 123, 0);
+}
+
+.items-card{
+    display: none;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.404);
+    backdrop-filter: blur(10px);
+    width: 320px;
+    height: 150px;
+    border-radius: 10px;
+    position: absolute;
+    left: 890px;
+    top: 60px;
+}
+.items-card ul li{
+   list-style-type: none;
+   margin-top: 8px;
+   margin-bottom: 15px;
+   margin-left: -10px;
+   background-color: white;
+   border-radius: 10px;
+   height: 30px;
+   width: 120px;
+   text-align: center;
+   line-height: 30px;
+  
+}
+.items-card ul li a{
+    text-decoration: none;
+    padding: 3px;
+    font-size: 15px;
+    color: black;
+}
+.items-card ul li:hover{
+    background-color: rgba(255, 255, 0, 0.705);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 2px 1px white ;
+}
+
+.social{
+    display: flex;
+    position: absolute;
+    left: 38%;
+    top: 57%;
+    align-items: center;
+    gap: 10px;
+    
+    text-align: center;
+
+}
+.social h3{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.social a{
+    text-decoration: none;
+    margin: 0px 5px;
+    font-size: 23px;
+    padding: 5px 8px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(216, 216, 216, 0.233);
+    border-radius: 10px;
+    color: white;
+}
+.social a:hover{
+    color: yellow;
+}
