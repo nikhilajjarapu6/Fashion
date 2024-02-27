@@ -440,7 +440,7 @@ input::placeholder {
 @media only screen and (min-width: 400px) and (max-width: 1000px){
     .navbar{
         position: absolute;
-        left: 180px;
+        left: 250px;
      }
      .fa-bars:hover+#bars-span {
         display: none;
@@ -452,6 +452,6 @@ input::placeholder {
     .social{
         position: absolute;
         left: 25%;
-        top: 37%;
+        top: 57%;
     }
  }
