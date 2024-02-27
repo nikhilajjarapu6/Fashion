@@ -437,3 +437,21 @@ input::placeholder {
     
     
 }
+@media screen and (min-width:1024px){
+    .navbar{
+        position: absolute;
+        left: 180px;
+     }
+     .fa-bars:hover+#bars-span {
+        display: none;
+    }
+ 
+    #hide:hover+#hide-span {
+        display: none;
+    }
+    .social{
+        position: absolute;
+        left: 25%;
+        top: 37%;
+    }
+ }
