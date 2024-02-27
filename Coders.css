@@ -381,10 +381,10 @@ input::placeholder {
 }
 
 
-@media screen and (max-width:410px)  {
+@media screen and (max-width:420px)  {
     .navbar{
        position: absolute;
-       left: 50px;
+       left: 130px;
     }
     .navbar ul {
         gap: 10px;
@@ -397,7 +397,7 @@ input::placeholder {
     .search {
         position: absolute;
         top: 40%;
-        left: 45%;  
+        left: 50%;  
     }
     .search input {
         height: 50px;
@@ -413,7 +413,7 @@ input::placeholder {
     }
     .social{
         position: absolute;
-        left: 15%;
+        left: 25%;
         top: 47%;
     }
     .social h3{
